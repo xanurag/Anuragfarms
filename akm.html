@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(42, 161, 6);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    div.gallery {
+        margin: 10px;
+        border: 1px solid rgb(148, 148, 148);
+        /* float: left; */
+        min-width: 180px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid rgb(241, 238, 238);
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 60px;
+        padding-left: 65px;
+    }
+h2 {
+    padding-left: 65px;
+}
+
+
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        bottom: 620px;
+        left: 1300px;
+        position: absolute;
+
+    }
+
+    .button {
+        border-radius: 12px;
+    }
+
+    .gallery-view {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+</style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li><a href="#gamestore">Game Store</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Category</a>
+                <div class="dropdown-content">
+                    <a href="#">Action</a>
+                    <a href="#">Racing</a>
+                    <a href="#">Adventure</a>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+    <section class="header1" style="background-color: white;">
+        <div class="">
+            <h1>Recmmended for you</h1>
+            <button class="button">See more</button>
+
+        </div>
+        <div class="gallery-view">
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.king.candycrushsaga">
+                    <img src="https://play-lh.googleusercontent.com/gU9NKwpgLDYA6LIYK4dnkAkVyqNHUfTIqklEiNuO4oZ2OCpWQhQdqhnDh8Yb9B8SWIM=s180-rw"
+                        alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Candy Crush Saga</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter">
+                    <img src="https://play-lh.googleusercontent.com/_-Jh7Aph6qnDfDb9o-YxBWPWBL8gjYhYZEsK4cHQmDDYQCM-VnfKkdlQLomPM-Apfw=s180-rw"
+                        alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">
+                    Call of Duty®</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dts.freefireth">
+                    <img src="https://play-lh.googleusercontent.com/NE5J766YoDwc3a76vBcF-DLRHSzrzpAscPv8Uez26HxgEOCPFDzsDKITQ3_oImWCvSg=s180-rw"
+                        alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Garena Free Fire</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.miniclip.eightballpool">
+                    <img src="https://play-lh.googleusercontent.com/m7UzuFoXqeQUzdI0FRjI4peJo901tFPDgHJpnFEXHgywmgPJMYa55g6Yr-ZrmQ6DcPg=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">8 Ball Pool</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad">
+                    <img src="https://play-lh.googleusercontent.com/q7dPSMz8uUF4r6MIJN6CpJN8XgnVeeb_wHvjFvwcMfs6hgkK9cOlRqsb2JuZP9Ynjg=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">MX player</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=org.videolan.vlc">
+                    <img src="https://play-lh.googleusercontent.com/nPnJc260PPoupBe-DcVQ-MNr6149dphdEoEAN-C9xwgctpVXbwsuyon_jEZ3uPWWYQ=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">VLC player</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=net.one97.paytm">
+                    <img src="https://play-lh.googleusercontent.com/k7yz57K2OxhNrPNKF2U18Zcv9rodOu7CfWh47U15FFUN8-_B0hQfXsM-BaLG0gOtvw=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Paytm</div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="header2" style="background-color:white;">
+
+        <div class="gallery-view">
+            <div class="gallery">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.zitga.ninja.stickman.legends">
+                    <img src="https://play-lh.googleusercontent.com/3eRBbW9Pydi8ZIirKrq-Usn8q_OKJREfm5zBoOV3V3sxhxyiIbq-uRb7Iv8LDiSA6T8=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Stickman Legends</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.bandainamcoent.ninjavoltage_app">
+                    <img src="https://play-lh.googleusercontent.com/t2uye0j2NaiO9z0hnCiuadH8pJSJM6en5E-ETL6fyyIyPka0qbrLoMk6l51wyjCwyec=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">NARUTO NINJA</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.squareenixmontreal.hitmansniperandroid">
+                    <img src="https://play-lh.googleusercontent.com/t8VJAWO7ioG9uGhkPOs7q7ZfKjigeMGFBq134VJKLVU_jKDn9VEz9Oqg1iXQ9axI7aE=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Hitman Sniper</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.fansipan.stickman.shadow.knights.fightinggames">
+                    <img src="https://play-lh.googleusercontent.com/9aLNxR4tHzWd5xuZpcB2mtIGCADD2PVteqvAD8SW702GVGY_ZnUrm4EDCoQuIzj3qSI=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Shadow Knight</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.theonegames.gunshipbattle">
+                    <img src="https://play-lh.googleusercontent.com/Ne4huf6UpBZiIWqOwq_amXia2pWm_lg5POpIZoJmHJEKTyYR3NVWVK-394ZPC_8c4i4=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">GUNSHIP BATTLE</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.Bingo.Fighter">
+                    <img src="https://play-lh.googleusercontent.com/E5YP_XFw1ZXDkLHbJw3fWKxv-ulSaXgZ4qZ77jEMWZllqp1m2pE3gMtpcxP1BFVL6oY=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Sky Fighters 3D</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.fungames.sniper3d">
+                    <img src="https://play-lh.googleusercontent.com/McSve6acOo6AMtrZ3vmPcRgReC4QD-rHjZpXK1tDp6vUVQkYXtxYFn_ILA8Hj2qwVw=s180-rw"
+                        alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Sniper 3D</div>
+            </div>
+        </div>
+
+    </section>
+    <section style="background-color:white;">
+        <div class="gallery-view">
+            <div class="">
+                <h2>Action Games</h2>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
